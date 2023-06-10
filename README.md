@@ -1,10 +1,10 @@
 # Avax-Eth Assignment
 
-Going to use mint(),burnTokens(),transferTokens(),getBalance(),redeemTokens functions using testnet fuji network.
+Going to use deposit(),withdraw(),totalSupply,balanceOftoken functions using local network subnet.
 
 ## Description
 
-Contract for creating a token system for this game.
+Contract for creating a seperate wallet/vault for every player and letting player do some things with it.
 
 ## Getting Started
 
@@ -35,3 +35,7 @@ and then execute every thing with that configuration of metamask in your remix.
 
 ### Executing program
 
+1. You need to deploy the ERC20.sol first.
+2. Then, you need to deploy the Vault.sol contract after that but give it the address of already deployed contract in the above step.
+3. Now in the first contract you need to mint some tokens and approve them to be transfered to the valut contract by giving it both the addresses and the amount.
+4. Now, you can call the deposit and wothdraw functions of the main Vault contract and check them as stated in the contract.
